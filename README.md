@@ -8,13 +8,13 @@ This project predicts stock prices by integrating financial news sentiment analy
 
 ### 1. **Data Collection**
 
-- **Yahoo Finance (**``**)**: Used to fetch historical stock data for Apple (AAPL) to provide a time-series dataset.
-- **News API (**``**)**: Retrieves financial news headlines to capture market sentiment.
+- **Yahoo Finance**: Used to fetch historical stock data for Apple (AAPL) to provide a time-series dataset.
+- **News API**: Retrieves financial news headlines to capture market sentiment.
 
 ### 2. **Sentiment Analysis**
 
-- **FinBERT (**``**)**: A specialized NLP model for financial text sentiment analysis. It helps extract market sentiment from news headlines.
-- **Softmax Activation (**``**)**: Converts model outputs into probability scores to measure sentiment intensity.
+- **FinBERT**: A specialized NLP model for financial text sentiment analysis. It helps extract market sentiment from news headlines.
+- **Softmax Activation**: Converts model outputs into probability scores to measure sentiment intensity.
 
 ### 3. **Feature Engineering**
 
