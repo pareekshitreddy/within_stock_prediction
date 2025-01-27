@@ -8,40 +8,40 @@ This project predicts stock prices by integrating financial news sentiment analy
 
 ### 1. **Data Collection**
 
-- **Yahoo Finance (**``**)**: Fetches historical stock data for Apple (AAPL) to provide a time-series dataset.
-- **News API (**``**)**: Retrieves financial news headlines to capture market sentiment.
+- **Yahoo Finance (`yfinance`)**: Fetches historical stock data for Apple (AAPL) to provide a time-series dataset.
+- **News API (`requests`)**: Retrieves financial news headlines to capture market sentiment.
 
 ### 2. **Sentiment Analysis**
 
-- **FinBERT (**``**)**: A specialized NLP model for financial text sentiment analysis. It helps extract market sentiment from news headlines.
-- **Softmax Activation (**``**)**: Converts model outputs into probability scores to measure sentiment intensity.
+- **FinBERT (`transformers`)**: A specialized NLP model for financial text sentiment analysis. It helps extract market sentiment from news headlines.
+- **Softmax Activation (`torch.nn.functional.softmax`)**: Converts model outputs into probability scores to measure sentiment intensity.
 
 ### 3. **Feature Engineering**
 
-- **Technical Indicators (**``**)**: Generates a comprehensive set of indicators to analyze market trends.
+- **Technical Indicators (`ta`)**: Generates a comprehensive set of indicators to analyze market trends.
 - **Lag Features**: Adds past closing prices as new features to capture time dependencies.
 
 ### 4. **Feature Selection**
 
-- **Recursive Feature Elimination (RFE) (**``**)**: Selects the most relevant features using a `RandomForestRegressor`, reducing dimensionality and improving model performance.
+- **Recursive Feature Elimination (RFE) (`sklearn.feature_selection.RFE`)**: Selects the most relevant features using a `RandomForestRegressor`, reducing dimensionality and improving model performance.
 
 ### 5. **Data Splitting and Scaling**
 
-- **Train-Validation-Test Split (**``**)**: Ensures robust model evaluation.
-- **MinMax Scaling (**``**)**: Normalizes the dataset to improve convergence in deep learning models.
+- **Train-Validation-Test Split (`sklearn.model_selection.train_test_split`)**: Ensures robust model evaluation.
+- **MinMax Scaling (`sklearn.preprocessing.MinMaxScaler`)**: Normalizes the dataset to improve convergence in deep learning models.
 
 ### 6. **LSTM Model for Time-Series Forecasting**
 
-- **Sequential Model (**``**)**: Defines the deep learning model architecture.
-- **LSTM Layers (**``**)**: Captures temporal dependencies in stock price movements.
-- **Dropout Layers (**``**)**: Prevents overfitting by randomly deactivating neurons.
-- **Dense Layers (**``**)**: Ensures proper transformation of features.
-- **Early Stopping (**``**)**: Stops training when validation loss stops improving.
+- **Sequential Model (`tensorflow.keras.models.Sequential`)**: Defines the deep learning model architecture.
+- **LSTM Layers (`tensorflow.keras.layers.LSTM`)**: Captures temporal dependencies in stock price movements.
+- **Dropout Layers (`tensorflow.keras.layers.Dropout`)**: Prevents overfitting by randomly deactivating neurons.
+- **Dense Layers (`tensorflow.keras.layers.Dense`)**: Ensures proper transformation of features.
+- **Early Stopping (`tensorflow.keras.callbacks.EarlyStopping`)**: Stops training when validation loss stops improving.
 
 ### 7. **Evaluation and Visualization**
 
-- **Mean Absolute Error (MAE) & Mean Squared Error (MSE) (**``**)**: Measures model accuracy.
-- **Matplotlib & Seaborn (**``**, **``**)**: Used for visualizing model performance and stock price trends.
+- **Mean Absolute Error (MAE) & Mean Squared Error (MSE) (`sklearn.metrics`)**: Measures model accuracy.
+- **Matplotlib & Seaborn (`matplotlib.pyplot`, `seaborn`)**: Used for visualizing model performance and stock price trends.
 
 ## Execution
 
