@@ -1,4 +1,4 @@
-# Stock Market Prediction using Financial News and LSTM
+# Stock Market Prediction Using Financial News and LSTM
 
 ## Overview
 
@@ -8,17 +8,17 @@ This project predicts stock prices by integrating financial news sentiment analy
 
 ### 1. **Data Collection**
 
-- **Yahoo Finance**: Used to fetch historical stock data for Apple (AAPL) to provide a time-series dataset.
-- **News API**: Retrieves financial news headlines to capture market sentiment.
+- **Yahoo Finance (**``**)**: Fetches historical stock data for Apple (AAPL) to provide a time-series dataset.
+- **News API (**``**)**: Retrieves financial news headlines to capture market sentiment.
 
 ### 2. **Sentiment Analysis**
 
-- **FinBERT**: A specialized NLP model for financial text sentiment analysis. It helps extract market sentiment from news headlines.
-- **Softmax Activation**: Converts model outputs into probability scores to measure sentiment intensity.
+- **FinBERT (**``**)**: A specialized NLP model for financial text sentiment analysis. It helps extract market sentiment from news headlines.
+- **Softmax Activation (**``**)**: Converts model outputs into probability scores to measure sentiment intensity.
 
 ### 3. **Feature Engineering**
 
-- **Technical Indicators (**``**)**: Used to generate a comprehensive set of indicators to analyze market trends.
+- **Technical Indicators (**``**)**: Generates a comprehensive set of indicators to analyze market trends.
 - **Lag Features**: Adds past closing prices as new features to capture time dependencies.
 
 ### 4. **Feature Selection**
