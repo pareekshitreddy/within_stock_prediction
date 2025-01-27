@@ -43,6 +43,20 @@ This project predicts stock prices by integrating financial news sentiment analy
 - **Mean Absolute Error (MAE) & Mean Squared Error (MSE) (`sklearn.metrics`)**: Measures model accuracy.
 - **Matplotlib & Seaborn (`matplotlib.pyplot`, `seaborn`)**: Used for visualizing model performance and stock price trends.
 
+## How to Get and Use Your News API Key
+
+To retrieve financial news, you need an API key from NewsAPI. Follow these steps:
+
+1. Visit [NewsAPI](https://newsapi.org/).
+2. Sign up for a free account.
+3. Navigate to your account settings and generate an API key.
+4. Replace `your_api_key_here` in the script with your generated API key:
+   ```python
+   url = "https://newsapi.org/v2/everything?q=stock%20market&apiKey=your_api_key_here"
+   response = requests.get(url)
+   news_data = response.json()
+   ```
+
 ## Execution
 
 Run the script by executing:
