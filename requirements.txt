@@ -1,0 +1,13 @@
+pandas
+numpy
+yfinance
+requests
+nltk
+torch
+transformers
+beautifulsoup4
+scikit-learn
+matplotlib
+seaborn
+tensorflow
+ta
